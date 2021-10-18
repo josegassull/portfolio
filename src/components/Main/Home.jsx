@@ -2,10 +2,11 @@ import Header from "./Header"
 import Logo from "./Logo"
 import ModeButton from "./ModeButton"
 import React, { useEffect, useState } from "react"
+import GroupButton from "./GroupButton"
 
 const Home = () => {
 
-    const [isDarkMode, setDarkMode] = useState(true);
+    const [isDarkMode, setDarkMode] = useState(false);
 
     function changeMode(e) {
         setDarkMode(e);
@@ -24,6 +25,7 @@ const Home = () => {
         <Header isDarkMode={isDarkMode} />
         <Logo isDarkMode={isDarkMode}/>
         <ModeButton changeMode={(e) => changeMode(e)} isDarkMode={isDarkMode} />
+        <GroupButton />
     </div>
 }
 

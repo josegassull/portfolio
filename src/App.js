@@ -1,5 +1,5 @@
 import {HashRouter as Router, Route, Switch} from "react-router-dom";
-import Home from "./components/main/Home";
+import Home from "./components/Main/Home";
 
 function App() {
     return (

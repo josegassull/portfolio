@@ -5,7 +5,7 @@ const ModeButton = (props) => {
         props.changeMode(!props.isDarkMode);
     }
 
-    return <div className={"text-center"}>
+    return <div className={"text-center mt-4"}>
         <button className={props.isDarkMode ? "btn btn-light mt-2" : "btn btn-dark mt-2"}
                 onClick={() => changeMode()}>{props.isDarkMode ? "Light" : "Dark"}</button>
     </div>

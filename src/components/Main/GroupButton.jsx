@@ -1,11 +1,16 @@
 import React from "react";
+import "../../styles/main/groupbutton.css";
+import AboutMeButton from "./AboutMeButton"
+import GameDevButton from "./GameDevButton"
+import WebDevButton from "./WebDevButton"
 
-const GroupButton = (props) => {
-    return <div className={"text-center mt-5"} role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-outline-success btn-lg">About Me</button>
-        <button type="button" class="btn btn-outline-primary btn-lg">Web Pages</button>
-        <button type="button" class="btn btn-outline-danger btn-lg">Games</button>
+const GroupButton = () => {
+    return <div className={"text-center mt-4"} role="group" aria-label="Basic example">
+        <button style={{border: "none", background: "none"}}><AboutMeButton /></button>
+        <button style={{border: "none", background: "none"}}><WebDevButton /></button>
+        <button style={{border: "none", background: "none"}}><GameDevButton /></button>
+
+        {/* <button type="button" class="btn btnYellow">Web Pages</button> */}
     </div>
-
 }
 export default GroupButton;

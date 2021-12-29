@@ -1,33 +1,31 @@
-import React, {useState} from "react";
 import DisplayInfo from "./DisplayInfo";
 import DisplayWeb from "./DisplayWeb";
 import DisplayGames from "./DisplayGames";
+import DisplayCourses from "./DisplayCourses";
 
-const Displayer = () => {
+const Displayer = (props) => {
 
-    var content=0;
+    const layouts = [
+        {
+            value: 0, layout: <div/>
+        },
+        {
+            value: 1, layout: <div className={"row"}><DisplayInfo/></div>
+        },
+        {
+            value: 2, layout: <div className={"row"}><DisplayWeb/></div>
+        },
+        {
+            value: 3, layout: <div className={"row"}><DisplayGames/></div>
+        },
+        {
+            value: 4, layout: <div className={"row"}><DisplayCourses/></div>
+        }
+    ];
 
-    if(content===0){
-        return <div></div>
-    }
-
-    if(content===1){
-        return <div>
-        <div className={"row"}><DisplayInfo /></div>
-    </div>
-    }
-
-    if(content===2){
-        return <div>
-        <div className={"row"}><DisplayWeb /></div>
-    </div>
-    }
-
-    if(content===3){
-        return <div>
-        <div className={"row"}><DisplayGames /></div>
-    </div>
-    }
+    return (
+        props.display ? layouts.find(layout => layout.value == props.display).layout : layouts[0].layout
+    )
 
     
 }

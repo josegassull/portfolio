@@ -1,14 +1,16 @@
-import Header from "./Header"
-import Logo from "./Logo"
-import ModeButton from "./ModeButton"
-import React, { useEffect, useState } from "react"
+import Header from "./Header";
+import Logo from "./Logo";
+import ModeButton from "./ModeButton";
+import React, { useEffect, useState } from "react";
 import GroupButton from "./GroupButton";
 import Displayer from "./Displayer";
+import Mail from "./Mail";
 
 const Home = () => {
 
     /* To change light/dark mode */
-    const [isDarkMode, setDarkMode] = useState(false);
+    const [isDarkMode, setDarkMode] = useState(true);
+    const [display, setDisplay] = useState();
 
     function changeMode(e) {
         setDarkMode(e);
@@ -23,32 +25,19 @@ const Home = () => {
             : document.body.style.backgroundColor = "#f2f2f2";
     }
 
+    function changeDisplay(e) {
+        setDisplay(e);
+    }
+
     return <div className={"container"}>
         <div className={"row"}><Header isDarkMode={isDarkMode} /></div>
-        <div className={"row"}><Logo isDarkMode={isDarkMode} /></div>
+        <div className={"row"}><GroupButton getDisplay={(e) => changeDisplay(e)} /></div>
         <div className={"row"}><ModeButton changeMode={(e) => changeMode(e)} isDarkMode={isDarkMode} /></div>
-        <div className={"row"}><GroupButton /></div>
-        <div className={"row"}><Displayer /></div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>a</div>
-        <div className={"row"}>f</div>
+        <div className={"row"}><Displayer display={display} /></div>
+        <div className={"row"}><Logo isDarkMode={isDarkMode} /></div>
+        <div className={"row"}><Mail/></div>
+
+
     </div>
 }
 

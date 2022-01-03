@@ -16,9 +16,43 @@
     color: rgb(224, 122, 255);
 }
 
-.styleProfileInfo{
-    margin: 5px;
+.styleGames{
+    background-color: #1C1F23;
+    padding: 20px;
+    margin: 20px;
     border: 1px solid;
+    text-align: center;
+    color: rgb(151, 255, 125);
+}
+
+.styleGames2{
+    background-color: #1C1F23;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.styleGameDownload{
+    background-color: #1C1F23;
+    color: rgb(151, 255, 125);
+    padding: 5px;
+    margin: 1px;
+    text-align: center;
+    border: 1px solid rgb(151, 255, 125);
+}
+
+.styleGamePics{
+    width: 100%;
+    padding: 5px;
+}
+
+.styleProflieInfo{
+    color: aqua;
+    padding: 1px;
+    margin: 1px;
+    border: 1px solid aqua;
 }
 
 .styleCourses{
@@ -51,4 +85,14 @@
 .profilePic{
     width: 150px;
     padding: 10px;
+}
+
+.styleCarousel{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.styleEmpty{
+    padding: 200px;
 }

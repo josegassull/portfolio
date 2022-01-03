@@ -1,11 +1,15 @@
 import React from 'react'
-import "../../styles/main/mail.css";
 
-const Mail = () => {
+const Mail = (props) => {
     return (
-        <div className={"mailStyle"}>
-            <h4>josegassull@gmail.com</h4>
+        <div className={"text-center"}>
+
+        <div className="p-2 mt-2">
+            <h4 className={ props.isDarkMode ? "text-light" : "text-dark"}>
+                josegassull@gmail.com
+            </h4>
         </div>
+    </div>
     )
 }
 

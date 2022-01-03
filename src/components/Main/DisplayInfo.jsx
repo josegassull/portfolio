@@ -8,16 +8,19 @@ const DisplayInfo = () => {
     return (
         <div className={"container"}>
             <div className={"row styleProfile"}>
-                <div className={"col"}><h4>Hi! I'm José</h4>
+                <div className={"col"}><h3>Hi! I'm José</h3>
                     <h6>I'm an argentinian Junior Software and Web Developer.</h6>
                     <div className={"row"}>
                         <div className={"col"}><ProfilePic /></div>
                     </div>
-                    <div className={"styleProfileInfo"} >
-                        <h6>I use JavaScript with React and Python mainly for web development and C# with Unity for games.</h6>
-                        <h6>I have experience with the frontend, the backend and with technologies such as Git, SQLite, HTML5, CSS and Bootstrap.</h6>
+                    <div className={"styleProflieInfo"}>
+                        <div className={"row"}>
+                            <h8>I use JavaScript with React and Python mainly for the frontend and C# within Unity for games.</h8>
+                        </div>
+                        <div className={"row"}>
+                            <h8>I'm familiar with technologies such as HTML5, CSS, Bootstrap, Git, Django and SQLite.</h8>
+                        </div>
                     </div>
-
                 </div>
             </div>
             <div className={"row styleCourses"}>

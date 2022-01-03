@@ -22,7 +22,7 @@ const Home = () => {
 
     function setBackgroundColor() {
         isDarkMode ? document.body.style.backgroundColor = "#121212"
-            : document.body.style.backgroundColor = "#f2f2f2";
+            : document.body.style.backgroundColor = "#d9d9d9"/*"#f2f2f2"*/;
     }
 
     function changeDisplay(e) {
@@ -35,7 +35,7 @@ const Home = () => {
         <div className={"row"}><ModeButton changeMode={(e) => changeMode(e)} isDarkMode={isDarkMode} /></div>
         <div className={"row"}><Displayer display={display} /></div>
         <div className={"row"}><Logo isDarkMode={isDarkMode} /></div>
-        <div className={"row"}><Mail/></div>
+        <div className={"row"}><Mail isDarkMode={isDarkMode}/></div>
 
 
     </div>

@@ -1,1 +1,7 @@
 rafce = new component react
+
+how to push everything to the repo:
+
+git add .
+git commit -m 'mensaje deseado'
+git push

@@ -8,7 +8,7 @@ const DisplayWeb = () => {
             <div className={"container"}>
                 <div className={"row styleWeb"}>
                     <h4>Frontend Technologies:</h4>
-                    <h6>JavaScript - React - HTML5 - CSS - Bootstrap - Git - Github</h6>
+                    <h6>JavaScript - React - HTML5 - CSS - Bootstrap - Sass - Git - Github</h6>
                     <h4>Backend Technologies:</h4>
                     <h6>Python - Django - C# - SQLite - Git - Github</h6>
                 </div>

@@ -7,7 +7,7 @@ const DisplayGames = () => {
             <div className={"container"}>
                 <div className={"row styleGames"}>
                     <h4>Unity Engine</h4>
-                    <h6>C# Scripting - Animations - Animator Tool - Camera - 1st Person - 3rd Person - 2D Projects - 3D Projects - Movility - Physics - UI - Path Finding - IA - Lightning - Sound - Skybox</h6>
+                    <h6>C# Scripting - Animations - Animator Tool - Particle System - Camera - 1st Person - 3rd Person - 2D Projects - 3D Projects - Movility - Physics - UI - Path Finding - IA - Lightning - Sound - Skybox</h6>
                 </div>
             </div>
             <div className={"container"}>

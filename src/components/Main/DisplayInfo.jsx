@@ -15,10 +15,10 @@ const DisplayInfo = () => {
                     </div>
                     <div className={"styleProflieInfo"}>
                         <div className={"row"}>
-                            <h8>I use JavaScript with React and Python mainly for the frontend and C# within Unity for games.</h8>
+                            <h6>I use JavaScript with React for the frontend along with HTML5, CSS, Bootstrap and Sass.</h6>
                         </div>
                         <div className={"row"}>
-                            <h8>I'm familiar with technologies such as HTML5, CSS, Bootstrap, Git, Django and SQLite.</h8>
+                            <h6>For games I work with C# within Unity Engine</h6>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,6 @@ const DisplayInfo = () => {
                 </div>
                 <div className={"col"}>
                     <h6>• Performance Engineering of Software Systems 2021</h6>
-                    <h6>• Software Construction Course - 2021</h6>
                     <h6>• Design and Analysis of Algorithms Course - In progress</h6>
                 </div>
             </div>

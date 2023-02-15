@@ -3,8 +3,8 @@ import "../../styles/main/displayer.css";
 
 const Carousel = () => {
     return (
-        <div>
-            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+        <div className={"container"}>
+            <div id="carouselExampleControls" className="carousel slide styleWeb" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src={`${process.env.PUBLIC_URL}/assets/img/javascriptLogo.png`} className="styleCarousel" />
